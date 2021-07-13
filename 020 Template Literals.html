@@ -1,0 +1,20 @@
+<html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>020 Template Literals</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p>One other feature, we'll use from time to time are <strong>template literals</strong>: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" rel="noopener noreferrer" target="_blank">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals</a></p><p>It's a different way of writing strings.</p><p>Instead of using double or single quotation marks:</p><p><code>'A String'</code></p><p>or</p><p><code>"Another string"</code></p><p>you can use backticks (<code>`</code>)</p><p><code>`Another way of writing strings`</code></p><p>Now why would we use that way of creating strings?</p><p>With that syntax, you can dynamically add data into a string like this:</p><pre class="prettyprint linenums">const name = "Max";
+const age = 29;
+console.log(`My name is ${name} and I am ${age} years old.`);</pre><p>This is of course shorter and easier to read than the "old" way of concatenating strings:</p><pre class="prettyprint linenums">const name = "Max";
+const age = 29;
+console.log("My name is " + name + " and I am " + age + " years old.");</pre><p><br></p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>

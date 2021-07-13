@@ -1,0 +1,16 @@
+<html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>045 Global  Local npm Packages</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p>In the last lecture, we added <code>nodemon</code> as a local dependency to our project.</p><p>The good thing about local dependencies is that you can share projects <strong>without the node_modules</strong> folder (where they are stored) and you can run <code>npm install</code> in a project to then re-create that node_modules folder. This allows you to share only your source code, hence reducing the size of the shared project vastly.</p><p>The attached course code snippets also are shared in that way, hence you need to run <code>npm install</code> in the extracted packages to be able to run my code!</p><p>I showed that <code>nodemon app.js</code> would <strong>not work</strong> in the terminal or command line because we don't use local dependencies there but global packages.</p><p>You could install <code>nodemon</code> globally if you wanted (this is NOT required though - because we can just run it locally): <code>npm install -g nodemon</code> would do the trick. Specifically the <code>-g</code> flag ensures that the package gets added as a global package which you now can use anywhere on your machine, directly from inside the terminal or command prompt.</p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>
