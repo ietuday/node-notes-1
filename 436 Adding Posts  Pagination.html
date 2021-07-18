@@ -1,0 +1,37 @@
+<html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>436 Adding Posts  Pagination</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p>Currently, when adding a new post with only one post being loaded, we end up with one post on the starting page (instead of the expected two posts).</p><p>We'll fix that later of course but you can already go ahead and make the required adjustment on your own.</p><p>We have to adjust our "add a post" code in the frontend to handle post creation and pagination correctly:</p><pre class="prettyprint linenums">this.setState(prevState =&gt; {
+    let updatedPosts = [...prevState.posts];
+    if (prevState.editPost) {
+        const postIndex = prevState.posts.findIndex(
+            p =&gt; p._id === prevState.editPost._id
+        );
+        updatedPosts[postIndex] = post;
+    } else {
+        if (prevState.posts.length &gt;= 2) {
+            updatedPosts.pop();
+        }
+        updatedPosts.unshift(post);
+    }
+    return {
+        posts: updatedPosts,
+        isEditing: false,
+        editPost: null,
+        editLoading: false
+    };
+});</pre><p>The following if block was added:</p><pre class="prettyprint linenums">if (prevState.posts.length &gt;= 2) {
+    updatedPosts.pop();
+}</pre></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>

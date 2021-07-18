@@ -1,0 +1,387 @@
+1
+00:00:02,390 --> 00:00:05,190
+Let's first of all understand NPM a bit better.
+
+2
+00:00:05,530 --> 00:00:10,580
+It's notes package manager as you learn and in the end it's a Selye a command line interface.
+
+3
+00:00:10,630 --> 00:00:17,830
+We always used it from the command line from the terminal by running NPM and then some command mostly
+
+4
+00:00:17,950 --> 00:00:24,640
+NPM install in this course the idea behind packages or tools like NPM.
+
+5
+00:00:24,700 --> 00:00:30,520
+And every programming language has a similar concept you could say is that we might have some isolated
+
+6
+00:00:30,520 --> 00:00:38,810
+functionality some code that we wrote or did we came up with that does something useful.
+
+7
+00:00:38,830 --> 00:00:41,130
+Let's say it generates a random number.
+
+8
+00:00:41,140 --> 00:00:47,090
+Now we can use that in our web application but maybe we want to use it in other applications as well
+
+9
+00:00:47,140 --> 00:00:54,280
+because this isolated functionality does not depend on our business logic in the project we're creating.
+
+10
+00:00:54,370 --> 00:00:56,900
+Or maybe we want to share it with the public.
+
+11
+00:00:57,310 --> 00:01:03,910
+Well if we want to share it internally or externally we can put it into a package with the help of NPM.
+
+12
+00:01:04,000 --> 00:01:11,650
+You can use NPM not just to install packages but also to create and share packages through that NPM
+
+13
+00:01:11,650 --> 00:01:17,680
+repository which is a cloud service where you don't have to pay for where you can host package as you
+
+14
+00:01:17,680 --> 00:01:23,740
+created and does all the service where you will and you can fetch packages from with the NPM install
+
+15
+00:01:23,740 --> 00:01:24,500
+command.
+
+16
+00:01:24,760 --> 00:01:30,970
+So in this repository which is managed globally you'll find the essence of packages obviously and if
+
+17
+00:01:30,970 --> 00:01:38,680
+you now have some node project you can use any of that you can use any of those packages with the NPM
+
+18
+00:01:38,680 --> 00:01:41,000
+install command frood at school.
+
+19
+00:01:41,110 --> 00:01:44,550
+And that is how you add packages to your project.
+
+20
+00:01:44,650 --> 00:01:51,760
+No matter if that is a package shared by you and you can also have private repositories or private packages
+
+21
+00:01:51,850 --> 00:01:52,390
+on NPM.
+
+22
+00:01:52,390 --> 00:01:58,360
+By the way that is something you do have to pay for but you can always use public packages and share
+
+23
+00:01:58,420 --> 00:01:59,990
+packages with the public.
+
+24
+00:02:00,140 --> 00:02:02,030
+That's the idea behind NPM.
+
+25
+00:02:02,050 --> 00:02:07,840
+Now let's have a closer look at the official NPM repository page and Tia waybill commands.
+
+26
+00:02:07,840 --> 00:02:11,870
+We can use you can visit any IMJ US DOT com.
+
+27
+00:02:11,870 --> 00:02:14,170
+That is the official page of NPM.
+
+28
+00:02:14,210 --> 00:02:16,210
+And there you can search for packages.
+
+29
+00:02:16,220 --> 00:02:21,500
+For example we could search for express here which is of course a package we used the Express framework
+
+30
+00:02:22,010 --> 00:02:28,160
+and then you see all kinds of packages that kind of were found forward and maybe packages that use Express
+
+31
+00:02:28,420 --> 00:02:29,090
+Maybe all.
+
+32
+00:02:29,120 --> 00:02:31,420
+Of course the express package itself.
+
+33
+00:02:31,760 --> 00:02:37,990
+And if you click on that you find some quick docks you see the words that were released here.
+
+34
+00:02:38,060 --> 00:02:40,850
+So here you can see the different words.
+
+35
+00:02:40,940 --> 00:02:44,950
+You could install through NPM you can target a specific word.
+
+36
+00:02:44,950 --> 00:02:52,630
+And by the way by going to your terminal and there with NPM install you can choose to package that at
+
+37
+00:02:52,760 --> 00:02:55,660
+sign and then a specific work number.
+
+38
+00:02:55,670 --> 00:03:01,550
+For example we could choose $416 free by typing for 16 dot free.
+
+39
+00:03:01,550 --> 00:03:06,890
+And now we would install that word into our project if we select no word in the latest one is picked
+
+40
+00:03:06,890 --> 00:03:07,940
+by default.
+
+41
+00:03:07,970 --> 00:03:11,580
+That's just a little side note so we can see that word in history.
+
+42
+00:03:11,690 --> 00:03:14,910
+We can see which our package this dispatch relies on.
+
+43
+00:03:14,980 --> 00:03:19,040
+And these packages will be installed for you automatically when you install it expressed.
+
+44
+00:03:19,070 --> 00:03:19,620
+Yes.
+
+45
+00:03:19,670 --> 00:03:25,610
+So DS will also end up in node modules as will the dependencies of these packages and that is why you
+
+46
+00:03:25,610 --> 00:03:31,280
+quickly end up with a big node modules folder by the way because you have a lot of dependencies of dependencies
+
+47
+00:03:31,280 --> 00:03:32,590
+of dependencies.
+
+48
+00:03:33,050 --> 00:03:35,530
+You also see things like official home page.
+
+49
+00:03:35,530 --> 00:03:41,630
+The get tab repository so the repository where you can find the source code for this package and so
+
+50
+00:03:41,630 --> 00:03:42,410
+on.
+
+51
+00:03:42,410 --> 00:03:44,170
+So this is really useful.
+
+52
+00:03:44,230 --> 00:03:49,760
+Now if you want to learn more about the NPM command though so what else you can run besides install
+
+53
+00:03:49,910 --> 00:03:51,840
+or how you can configure install.
+
+54
+00:03:51,860 --> 00:03:59,100
+For example with dash dash save words dash dash save def to install up production or a development dependency.
+
+55
+00:03:59,180 --> 00:04:04,400
+If you want to learn more about that do the official docs are of course the right place there if you
+
+56
+00:04:04,400 --> 00:04:06,920
+dive in.
+
+57
+00:04:06,930 --> 00:04:12,360
+You can learn way more about NPM and diving deeply into that would really be beyond the scope of this
+
+58
+00:04:12,360 --> 00:04:19,530
+course because NPM creating and managing packages that is a topic on its own not closely related to
+
+59
+00:04:19,550 --> 00:04:23,600
+no changes to language just an additional feature you get for free.
+
+60
+00:04:23,670 --> 00:04:29,460
+So here you can learn way more about that and here on this page if you scroll down a bit further you'll
+
+61
+00:04:29,460 --> 00:04:32,470
+also see all the whaleboat commands you could run.
+
+62
+00:04:32,670 --> 00:04:40,520
+And then if you click on one of them for example on install you also see how you may use it.
+
+63
+00:04:40,520 --> 00:04:46,160
+So here you see a detailed instructions on how you may configure it for example that you can run it
+
+64
+00:04:46,160 --> 00:04:53,180
+in global mode to install a package on your system and not just in a project or that you can of course
+
+65
+00:04:53,240 --> 00:05:01,850
+also install it with the dash dash save flag save death or save prod which is the same as just dash
+
+66
+00:05:01,850 --> 00:05:03,090
+dash save in the end.
+
+67
+00:05:03,290 --> 00:05:08,910
+So there you see all the ways of configuring that are running that command in different ways.
+
+68
+00:05:08,990 --> 00:05:11,170
+And if you want to learn way more about that.
+
+69
+00:05:11,330 --> 00:05:18,910
+And for most cases you just need NPM installed dash dash save or dash dash save death or dash G.
+
+70
+00:05:18,980 --> 00:05:24,090
+But if you want to learn way more of course these official docs are the place to go.
+
+71
+00:05:25,140 --> 00:05:31,680
+It is worth pointing out that you all can get help here locally when you type NPM help here.
+
+72
+00:05:31,890 --> 00:05:38,490
+You also get instructions on the available commands you may run and you can also get help on a specific
+
+73
+00:05:38,490 --> 00:05:39,310
+command.
+
+74
+00:05:39,330 --> 00:05:45,400
+So if I run NPM install dash dash help here or just dash age.
+
+75
+00:05:45,720 --> 00:05:53,580
+Then I see how I may run this command and also which options I have to add additional flex.
+
+76
+00:05:53,610 --> 00:05:58,270
+However these are just the common options not all options for the full docs of course.
+
+77
+00:05:58,320 --> 00:06:02,590
+You should dive into the official documentation here.
+
+78
+00:06:02,630 --> 00:06:08,540
+The commands you can run here especially installing are one powerful thing.
+
+79
+00:06:08,600 --> 00:06:09,830
+NPM allows you to do.
+
+80
+00:06:09,830 --> 00:06:15,170
+You can add any package you want to your project and number important feature is that if you click on
+
+81
+00:06:15,170 --> 00:06:22,190
+using NPM here you can run scripts with NPM and dead and generally is related to that package deal Jason
+
+82
+00:06:22,190 --> 00:06:30,050
+file you get when you put a project under control of NPM what you do with help of d NPM in the command.
+
+83
+00:06:30,050 --> 00:06:35,070
+We also use Statten that course Dad will ask you a couple of questions and then give you a package of
+
+84
+00:06:35,090 --> 00:06:41,870
+Jason File which you can use to configure a project and there you can not only keep a list of your dependencies.
+
+85
+00:06:41,870 --> 00:06:49,310
+You can also add certain scripts and you can run these scripts either with NPM start to run the stars
+
+86
+00:06:49,310 --> 00:06:53,770
+script or NPM run and then any script name you configured in there.
+
+87
+00:06:54,080 --> 00:07:01,040
+And that is very powerful especially when it comes to using NPM and notorious to build projects.
+
+88
+00:07:01,040 --> 00:07:04,280
+It is something I can best show any re-act application.
+
+89
+00:07:04,280 --> 00:07:06,600
+We worked with in this course.
+
+90
+00:07:06,670 --> 00:07:12,580
+Here I am in that application and there if we had a look at that package dodgiest and fall you see that
+
+91
+00:07:12,580 --> 00:07:16,540
+scripts area and there you see a couple of scripts which you can run.
+
+92
+00:07:16,540 --> 00:07:20,220
+For example start with NPM start but that's a special case.
+
+93
+00:07:20,230 --> 00:07:27,880
+All our scripts with NPM run and then for example of build or eject and then these scripts are executed.
+
+94
+00:07:27,940 --> 00:07:30,950
+Now these scripts actually use a third party package.
+
+95
+00:07:31,000 --> 00:07:36,790
+So a dependency which was installed re-act scripts we see it here in the dependencies list and then
+
+96
+00:07:36,790 --> 00:07:42,130
+that dependency holds to code that will actually do something and that is the next step I will come
+
+97
+00:07:42,130 --> 00:07:50,020
+back to with no japes being able to run on your machine and not being limited to spinning up a web server.
